@@ -7,20 +7,47 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<div class="topnav">
+  <a class="active" href="#SobreMim">Sobre Mim</a>
+  <a href="#stacks">Stacks</a>
+  <a href="#projetos">Projetos</a>
+  <a href="#educação">Educação</a>
+  <a href="#experiência">Experiência</a>
+  <a href="#contato">Contato</a>
+</div>
 
-    <header>
-        <section>
-        <h1>Prazer eu sou</h1>
-        <h2>Kaique Duarte</h2>
-        <p>Desenvolvedor full-stack com foco no back-end em Python, automatizações, APIs e Ciência de Dados</p>
-        <a href="#">Curriculo</a>
-        <a href="#">Projetos</a>
-        <a href="#">Contato</a>
-    </section>
-    </header>
+   <header class="intro">
+<section class="sobre">
+  <div class="texto">
+    <h1>Prazer eu sou <br><span class="label">Kaique Duarte</span></h1>
+    <p span class="p">
+      Olá, sou <b>Kaique Duarte</b>, desenvolvedor full-stack com foco em 
+      <b>back-end em Python</b>, automações, APIs e Ciência de Dados. 
+      Tenho experiência em transformar ideias em soluções tecnológicas 
+      completas, desde pequenos sistemas até plataformas robustas.
+    </p>
+    
+    <div class="botoes">
+      <a href="#projetos" class="projeto">Projetos</a>
+      <a href="curriculo.pdf" class="curriculo">Currículo</a>
+    </div>
+  </div>
+
+  <div class="intro-img">
+    <img src="mordecai.png" alt="Foto do Kaique">
+  </div>
+</section>
+
+
+</header>
+
 
 
     <main>
@@ -28,19 +55,39 @@
 
         <section>
             <h2>Sobre Mim</h2>
-            <h3>Quem sou eu?</h3>
-            <p>Sou um desenvolvedor iniciante apaixonado por tecnologia, com alguns meses de estudos intensivos em programação. Tenho desenvolvido habilidades sólidas em front-end (HTML, CSS, JavaScript, React) e back-end (Python, Node.js, SQL), com foco em automação de tarefas, APIs e fundamentos de machine learning.</p>
-            <p>Comecei minha jornada no front-end sempre buscando fazer códigos otimizados, limpos e funcionais, depois de aprender um HTML limpo e semantico fui para o CSS e consequentemente aprendi JavaScript e React, atualmente estudo Python, SQL e Node.JS além de alguns frameworks que ando aprendendo ao longo dessa minha jornada.</p>
-            <a href="">github</a>
-            <a href="">linkedin</a>
-            <a href="">email</a>
+            <span class="label">
+                <h3>Quem sou eu?</h3>
+            </span>
+            <span id="p">
+                <p>Sou um desenvolvedor iniciante apaixonado por tecnologia, com alguns meses de estudos intensivos em programação. Tenho desenvolvido habilidades sólidas em front-end (HTML, CSS, JavaScript, React) e back-end (Python, Node.js, SQL), com foco em automação de tarefas, APIs e fundamentos de machine learning.</p>
+                <p>Comecei minha jornada no front-end sempre buscando fazer códigos otimizados, limpos e funcionais, depois de aprender um HTML limpo e semantico fui para o CSS e consequentemente aprendi JavaScript e React, atualmente estudo Python, SQL e Node.JS além de alguns frameworks que ando aprendendo ao longo dessa minha jornada.</p>
+            </span>
+
+
         </section>
 
 
         <section>
-            <h2>Objetivos</h2>
-            <p>Meu objetivo é me tornar um desenvolvedor full-stack competente, capaz de criar aplicações web completas e eficientes com foco principal em back-end. Estou focado em aprender novas tecnologias e aprimorar minhas habilidades para contribuir significativamente em projetos futuros. Busco oportunidades de aprendizado e crescimento, com o objetivo de ingressar no mercado internaticonal de tecnologia, incluindo estudos na SAIT (Canadá)</p>
+            <span class="label">
+                <h3>Objetivos</h3>
+            </span>
+            <span id="p">
+                <p>Meu objetivo é me tornar um desenvolvedor full-stack competente, capaz de criar aplicações web completas e eficientes com foco principal em back-end. Estou focado em aprender novas tecnologias e aprimorar minhas habilidades para contribuir significativamente em projetos futuros. Busco oportunidades de aprendizado e crescimento, com o objetivo de ingressar no mercado internaticonal de tecnologia, incluindo estudos na SAIT (Canadá)</p>
+            </span>
+
+            <div class="social-icons">
+            <a href="#"><img src="github.png" alt=""></a>
+                <i class="fab fa-github"></i>
+            
+            <a href="#"><img src="linkedin.png" alt=""></a>
+                <i class="fab fa-linkedin"></i>
+            
+            <a href="#"><img src="instagram.png" alt=""></a>
+                <i class="fab fa-instagram"></i>
+            
+            </div>
         </section>
+        
 
 
         <section>
@@ -188,7 +235,7 @@
 
 
         <section>
-            <h3>Educação</h3>
+            <h2>Educação</h2>
             <ul>
                 <li>Autodidata em Programação</li>
                 <li>Inicio da Faculdade de Desenvolvimento de Sistemas na USP</li>
