@@ -149,35 +149,37 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: var(--color-card);
-  overflow: hidden;
-  position: sticky;
-  top: 0%;
-  z-index: 1000;
-}
+    background-color: var(--color-card);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 60px;
+    display: flex;
+    align-items: center;
+} 
+
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: var(--color-text-primary);
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  height: 35px;
+    color: var(--color-text-primary);
+    text-align: center;
+    padding: 0 15px;
+    text-decoration: none;
+     height: 60px;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #6c28d91e;
-  border-radius: 10px;
-  padding: 14px;
-  height: 30px;
-  margin-top: 2px;
-  color: var(--color-accent);
-  transition: 0.5s;
-  box-shadow: 0 0 15px rgb(109, 40, 217, 0.6), 0 0 30px rgb(109, 40, 217, 0.4);
-  animation: floatUpDown 3s infinite ease-in-out;
+    background-color: #6c28d91e;
+    border-radius: 10px;
+    color: var(--color-accent);
+    transition: 0.5s;
+    box-shadow: 0 0 15px rgb(109, 40, 217, 0.6), 0 0 30px rgb(109, 40, 217, 0.4);
+    animation: floatUpDown 3s infinite ease-in-out;
+    transform: scale(1.05);
 }
 
 @keyframes floatUpDown {
